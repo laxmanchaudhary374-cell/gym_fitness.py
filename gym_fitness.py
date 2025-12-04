@@ -11,7 +11,7 @@ from datetime import datetime
 from collections import defaultdict
 
 # ==================== CONFIGURATION ====================
-GOOGLE_API_KEY = "AIzaSyBSXkOD-gcCFcrtt01psm5Ck_76gYcCD4M"  #⚠️ REPLACE THIS
+GOOGLE_API_KEY = "AIzaSyCRoaWiiOGsslJ5VQwPXo-pfYRmOUMxu5Q"  #⚠️ REPLACE THIS
 
 RATE_LIMIT = 10
 RATE_LIMIT_WINDOW = 60
@@ -352,4 +352,5 @@ st.markdown("""
     ⏰ Mon-Fri 5AM-11PM | Weekends 6AM-10PM<br><br>
     🤖 AI-Powered Assistant | Portfolio Project</p>
 </div>
+
 """, unsafe_allow_html=True)
