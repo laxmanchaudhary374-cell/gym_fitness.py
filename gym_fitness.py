@@ -11,7 +11,8 @@ from datetime import datetime
 from collections import defaultdict
 
 # ==================== CONFIGURATION ====================
-GOOGLE_API_KEY = "AIzaSyCRoaWiiOGsslJ5VQwPXo-pfYRmOUMxu5Q"  #⚠️ REPLACE THIS
+import os
+GOOGLE_API_KEY = st.secrets.get("AIzaSyCRoaWiiOGsslJ5VQwPXo-pfYRmOUMxu5Q", os.getenv("AIzaSyCRoaWiiOGsslJ5VQwPXo-pfYRmOUMxu5Q", ""))  #⚠️ REPLACE THIS
 
 RATE_LIMIT = 10
 RATE_LIMIT_WINDOW = 60
@@ -354,3 +355,4 @@ st.markdown("""
 </div>
 
 """, unsafe_allow_html=True)
+
